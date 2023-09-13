@@ -33,11 +33,10 @@ const renderTodos = () => {
 
 const displayTodo = (todoObj) => {
   main.innerHTML += `<div
-    class="col-12 p-0 row justify-content-between align-items-center bg-info-subtle mx-0 px-0"
+    class="col-12 p-0 row justify-content-between align-items-center mx-0 p-2 rounded mb-3" style="background-color: #f5f5f5"
     >
-    <div class="col-4 p-0 ps-4 rounded"><span>${todoObj.name}</span></div>
+    <div class="col-4 p-0 ps-4 rounded"><span><h6>${todoObj.name}</h6></span></div>
     <div class="col-4 p-0 text-end">
-      <div class="btn btn-primary">Edit</div>
       <div class="btn btn-danger" onclick="deleteTodoFromTodos(${todoObj.id})">Delete</div>
     </div>
     </div>`;

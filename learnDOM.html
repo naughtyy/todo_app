@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div
+      class="tarik"
+      style="background-color: red; width: 120px; height: 20px; padding: 40px"
+    >
+      3w academy
+    </div>
+    <div class="mydiv">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt
+        praesentium, ipsum nemo ipsam repellendus rem laudantium voluptas,
+        deserunt quos porro soluta dolores tempora perferendis quo rerum
+        accusantium! Ullam, maxime quas!
+      </p>
+    </div>
+
+    <script>
+      const div = document.querySelector(".tarik");
+      //   const mydiv = document.querySelector(".mydiv");
+      //   mydiv.innerHTML = "<p> Hello </p>";
+      //   div.addEventListener("mouseover", mouseOver);
+      //   div.addEventListener("mouseout", mouseOut);
+      function mouseOver() {
+        div.innerHTML = "Oops ";
+        div.style.backgroundColor = "blue";
+      }
+
+      function mouseOut() {
+        div.innerHTML = "3w academy";
+        div.style.backgroundColor = "red";
+      }
+    </script>
+  </body>
+</html>
